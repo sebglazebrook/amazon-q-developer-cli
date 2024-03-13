@@ -51,7 +51,7 @@ protocol = https
 	trustExitCode = true
 [user]
 	name = Seb Glazebrook
-	email = sebastianglazebrook@gmail.com
+	email = sebastianglazebrook+github@gmail.com
 
 [commit]
   template = ~/.git-commit-template
