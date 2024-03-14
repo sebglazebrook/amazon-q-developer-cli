@@ -66,6 +66,12 @@ if [ "$?" != 0 ]
     printf "for f in ~/.bash_completion.d/* ; do source \$f; done\n" >> ${HOME_DIR}/.bashrc
 fi
 
+cat ${HOME_DIR}/.bashrc | grep 'source ~\/code\/z\/z\.sh' &> /dev/null
+if [ "$?" != 0 ]
+  then
+    printf "source ~/code/z/z.sh\n" >> ${HOME_DIR}/.bashrc
+fi
+
 if [ -f ~/.bash_profile  ]; then
   printf "source ~/.bashrc \n" >> ${HOME_DIR}/.bash_profile
 fi
